@@ -1,0 +1,152 @@
+/*general*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*structure*/
+
+.wrapper {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    margin: 30px;
+    border: 1px solid #B8B8B8;
+    box-shadow: 1px 1px 1px 2px #B8B8B8;
+    background-image: linear-gradient(to right, #fff, #F5F5F5);
+    
+}
+
+/*right side with description*/
+
+main {
+    width: 75%;
+    background-color: #FEFEFE;
+    padding: 20px 30px;
+    border: 1px solid #B8B8B8;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 10px 20px;
+    text-align: left;
+    color: #0F0F0F;
+    opacity: 0.7;
+}
+ 
+h2 {
+    font-size: 24px;
+    margin: 10px 20px;
+    color: #171717;
+    opacity: 0.8;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 10px 20px;
+    color: #171717;
+    opacity: 0.8;
+}
+
+
+p {
+    font-size: 18px;
+    margin: 10px 20px;
+    color: #6B6C6D;
+    opacity: 0.8;
+}
+
+/*left side with links*/
+
+aside {
+    width: 15%;
+    background-color: #EBEBEB;
+    padding: 10px;
+    border: 1px solid #B8B8B8;
+    background-image: linear-gradient(to bottom, #F6F6F6, #FEFEFE);
+} 
+
+.container {
+    width: 100%;
+    border-top: 1px solid #B8B8B8;
+    padding: 10px;
+}
+
+.container.first {
+    border-top: none;
+    padding-top: 0px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;    
+}
+a.outside{
+    color: darkslateblue;
+    text-decoration: underline;
+}
+ul {
+    list-style-type: none;
+}
+
+/*styles for tablet*/
+
+@media(max-width: 768px) {
+    .wrapper {
+        max-width: 768px;
+        padding: 10px;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+
+    aside {
+        width: 90%;
+        height: 100px;
+        margin: 0;
+        padding: 10px;
+        margin: 0px 10px;
+        position: fixed;
+        bottom: 0;
+        overflow: scroll;
+        background-color: #6B6C6D;  
+        z-index: 10;
+        background-image: none;
+    }
+
+    a, h3.title-aside {
+        color: #fff;
+        opacity: 1;
+    }
+    
+    .container {
+        border-top: none;
+    }
+
+    main {
+        margin: 0;
+        padding: 10px 0px;
+        width: 100%;
+        margin-bottom: 100px;
+        z-index: 1;
+        
+    }
+    
+    ul {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    
+    }
+
+
+}
